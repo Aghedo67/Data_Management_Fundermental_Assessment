@@ -1,0 +1,26 @@
+Introduction
+The reason for this component was to expose me in the use of NoSQL database in data managegment
+This part of the assessment turned out to be one of the most challenging yet interesting.
+After realizing that my Machine(MacBook Air Version 11.7.10) couldnt install most of the NoSql tools, i started becoming very frustratated, trying to install brew, but kept having errors and interuption due to my machine's version, having completed the rest components of the assessment, i was left with component 5(NoSql). This was very frustrating for me.
+
+I was able to solve all of these challenges by beconing on a friend who's machine was able to perform some of the NoSql database
+This experience taught me how important it is to have a machine that has the capacity to handle all the softwares that are needed in for handling Data Science.
+
+Experience and Challenge with MongoDB
+I had always thought of using MongoDB for the component 5 because i had always heard my tutor (Prakash), constantly refer to it so i assumed it's his favourite, although we where taught BaseX in class, but i was always drawn to MongoDB because of sentiments, couopled with the fact that trying something new won't be a bad idea as it will broaden my knowledge of NoSQL. I started up by picking my sample data which was the first 10 rows of my data set and then i designed it using the JSON script, this worked with python on Jupyter note book as i was able to create the Sample data structure, before this, i had to first of all import the library that would enable me connect the python to MongoDB and the name of the library i used was called pymongo library, and then imported it directly to MongoDB, the process was a long one, because i had to manualy populate my three tables; station table, constituency table and Reading table(AirQualityMeasurement). To represent a dataset in a NoSQL database, it is often useful to arrange data in aggregates. Each aggregate is a group of related application objects, representing a unit of data access and atomic manipulation (Atzeni et al., 2020). With this, i was able to create and structure my sample data. I choose one of the stations called Colston Avenue, which has 501 as its stationID, went back to my reading(AirQualitymeasurement) and used the first 10 data with 501 as its stationID, this was done manually because the sample data wasnt large. After reflection, i have come to realise that another approach to this would have been to create an XML file containing the Sample Data.
+After successfully importing the sample dataset into MongoDb, it was now time for me to run some queries which i couldnt.
+I tried all i could, but all effort proved abortive. Lets just say i couldn't run query on MongoDB. The frustration i got from not being able to run a query on MongoDB, led me to BaseX.
+
+Experience with BaseX
+The challenges i encountered in MongoDB then made me resort to BaseX which turned out to be the easiest and seemless way to model data. What i did was rewrite the sample data that was initially written in JSON script and turn it to XML, because BaseX performs better with XML file and this process was very seemless, after importing the XML file carrying my sample data, i then started querying the sample data just so i could see how it works and it did worked as expected. i carried out 3 queries just to see how it works. My first query was to determine the elements with NO that are less than 20, the second query was to also check for NO2 that are greater than 100 in the sample data and finally we checked for NOx that are greater than or equal to 300. Screen captures of the query and it's out put are attached for better understanding.
+
+Lessons Learnt
+This excersie made me understand the importance of Modeling and querying data using NoSQL. Chen and Lee 2019 discussed that enterprise’s database is desired to be accessed as fast as possible. To obtain complex information from multiple relations, RDB sometimes needs to perform SQL join operations to merge two or more relations at the same time, which can lead to performance bottlenecks. Besides, except the relational data storage format, other data storage formats have been proposed in many applications, such as key-value pairs, document-oriented, time series, etc. As a result, more and more enterprises have decided to use NoSQL databases to store big data. This shows that NoSQL is faster than RDM and also more straught forward, Chen and Lee 2019 also disusse that NoSQL is Schema-free, Unlike RDBs need to define database schema before inserting data, NoSQL databases do not need to do this. Therefore, NoSQL databases can flexibly add data. With the few knowledge i have gathered about NoSQL based on this assessment, i can confidently put on my CV that i am a NoSQL expert. Going forward, i will try to use NoSQl on random dataset practice.
+
+Reference
+Atzeni, P., Bugiotti, F., Cabibbo, L., & Torlone, R.(2020). Data modeling in the NoSQL world. Computer Standards & Interfaces, 67, 103149.
+http://doi.org/10.1016/j.csi.2016.10.003
+
+Chen, J.-K. & Lee, W.-Z., 2019. An Introduction of NoSQL Databases Based on Their Categories
+and Application Industries. Algorithms, 12(5), p.106. Available at:
+https://doi.org/10.3390/a12050106 [Accessed 13 Jan. 2025].
