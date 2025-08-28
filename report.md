@@ -1,6 +1,6 @@
                         Reflective Report for Data Management Fundamentals Assessment
 
-StudentID 23016468
+StudentID 
 INTRODUCTION:
 This assessment was to test our knowledge in relational database management, I ensured to attend all classes, gaining the necessary knowledge to complete each component. Weekly lessons provided essential insights into tackling the tasks. My first step was carefully studying the brief to understand each part's requirements. I will be reflecting on
 COMPONENT 1 (ER Diagram and Database Design)
